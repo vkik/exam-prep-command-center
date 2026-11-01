@@ -1,0 +1,60 @@
+/* variables.css — "Academic Focus & Clarity" (refined light scheme, v2).
+   Canvas Slate-50 · white cards with soft borders and gentle shadow · deep navy sidebar · Sky-600 accent.
+   Contrast ratios are listed in docs/THEME.md. */
+:root {
+  /* palette */
+  --navy-900: #0F172A;      /* sidebar, headings, input text */
+  --navy-800: #1E293B;      /* sidebar active pill */
+  --slate-700: #334155;     /* body text & labels */
+  --slate-600: #475569;
+  --slate-500: #64748B;     /* secondary / muted metadata */
+  --slate-400: #94A3B8;     /* sidebar navigation text */
+  --slate-300: #CBD5E1;     /* input & table borders */
+  --slate-200: #E2E8F0;     /* card borders, outline-button borders */
+  --slate-100: #F1F5F9;
+  --slate-50: #F8FAFC;      /* canvas */
+  --sky: #0284C7;           /* Sky-600 — primary buttons, active tabs, focus, indicators */
+  --sky-hover: #0369A1;     /* Sky-700 — hover; link text */
+  --sky-press: #075985;
+  --amber: #F59E0B;         /* non-text fills: buffer bars, changed-field markers */
+  --accent: var(--sky);
+
+  /* tokens used by the components */
+  --bg: var(--slate-50);
+  --bg-2: #FFFFFF;          /* inputs */
+  --surface: #FFFFFF;       /* cards, tables, dialogs */
+  --surface-2: var(--slate-50);   /* table headers, quiet fills inside cards */
+  --surface-3: var(--slate-100);  /* tags, neutral pills, progress tracks */
+  --border: var(--slate-200);
+  --border-strong: var(--slate-300);
+  --heading: var(--navy-900);
+  --text: var(--slate-700);       /* 10.35:1 on white */
+  --text-2: var(--slate-600);     /* 7.58:1 on white */
+  --text-3: var(--slate-500);     /* 4.76:1 on white, 4.55:1 on canvas */
+
+  --teal: var(--sky-hover);       /* accent TEXT (links, accent numbers) — 5.93:1 on white */
+  --teal-strong: var(--sky);
+  --teal-soft: rgba(2, 132, 199, 0.08);
+  --gold: #854D0E;                /* "attention / estimated" text — 6.9:1 on white */
+  --gold-soft: rgba(245, 158, 11, 0.12);
+
+  /* semantic tokens (meanings unchanged) — all ≥ 5.4:1 on white and on their own tint */
+  --ok: #166534;   --ok-soft: rgba(22, 163, 74, 0.10);
+  --warn: #92400E; --warn-soft: rgba(245, 158, 11, 0.12);
+  --err: #991B1B;  --err-soft: rgba(220, 38, 38, 0.08);
+  --info: #1E40AF; --info-soft: rgba(37, 99, 235, 0.08);
+  --violet: #5B21B6; --violet-soft: rgba(124, 58, 237, 0.08);
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.10), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+  --focus: 0 0 0 3px rgba(2, 132, 199, 0.30);
+
+  --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-num: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --sidebar-w: 248px;
+  --gap: 18px;
+}

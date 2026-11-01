@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "dataVersion": "2026-10-31.4",
+  "labels": [
+    "Verified",
+    "User Entered",
+    "Historical",
+    "Not Yet Verified",
+    "Conflicting Data",
+    "Unavailable",
+    "Estimated Planning Value"
+  ],
+  "sources": [
+    {
+      "id": "SRC-BRIEF",
+      "title": "Project brief (as restated in the v1.0.0 build: reference/v1.0.0-build/assets/js/data.js and README)",
+      "capturedAt": "2026-10-31",
+      "note": "The original brief document is not in the workspace. Values are taken from the v1 restatement and re-checked for internal consistency."
+    },
+    {
+      "id": "SRC-PMT",
+      "title": "PM-Tricks platform snapshot (via project brief)",
+      "capturedAt": "2026-10-31"
+    },
+    {
+      "id": "SRC-CSOD",
+      "title": "Ready CSOD / DisasterReady platform snapshot (via project brief)",
+      "capturedAt": "2026-10-31"
+    },
+    {
+      "id": "SRC-PM4NGOS-FAQ",
+      "title": "PM4NGOs — Frequently Asked Questions",
+      "url": "https://pm4ngos.org/faq/",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "SRC-PMI-GPMB",
+      "title": "PMI shop — GPM-b Certified Green Project Manager – Basic",
+      "url": "https://www.pmi.org/shop/us/p-/digital-product/gpm-b-certified-green-project-manager-basic/ce061",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "SRC-USER",
+      "title": "Recorded or decided by you (in the app or in project review)",
+      "capturedAt": "2026-10-31"
+    }
+  ],
+  "planning": {
+    "startDate": "2026-10-31",
+    "endDate": "2026-12-14",
+    "readinessTargetDate": "2026-12-14",
+    "label": "Verified",
+    "source": "SRC-BRIEF",
+    "note": "Planning dates only — not confirmed examination booking dates.",
+    "dailyTargetMin": {
+      "gpmb": 40,
+      "dpro": 30
+    },
+    "dailyTargetLabel": "User Entered",
+    "dailyTargetSource": "SRC-USER",
+    "dailyTargetNote": "Decided 31 Oct 2026 (Phase 0 review): GPM-b 40 + Project DPro 30 = 70 min/day. Neither certification may drop below its 30 min minimum.",
+    "minimumDailyMin": {
+      "gpmb": 30,
+      "dpro": 30
+    },
+    "milestoneNote": "All milestone dates are planning targets, not confirmed examination appointments."
+  },
+  "readinessDefaults": {
+    "label": "Estimated Planning Value",
+    "weights": {
+      "mock": 35,
+      "coverage": 25,
+      "diagnostic": 25,
+      "consistency": 15
+    },
+    "thresholds": {
+      "developing": 40,
+      "approaching": 60,
+      "strong": 75
+    },
+    "minCoveragePct": 60,
+    "includeHistorical": false,
+    "mockAttemptsAveraged": 3
+  },
+  "milestones": [
+    {
+      "id": "ms-diag",
+      "certificationId": null,
+      "title": "Complete both diagnostic assessments",
+      "suggestedDate": "2026-11-07"
+    },
+    {
+      "id": "ms-first-practice",
+      "certificationId": null,
+      "title": "Complete first practice test",
+      "suggestedDate": "2026-11-10"
+    },
+    {
+      "id": "ms-dpro-curr",
+      "certificationId": "dpro",
+      "title": "Complete Project DPro training curriculum",
+      "suggestedDate": "2026-11-14",
+      "decision": "Planning target set by you on 31 Oct 2026 (Phase 3 brief) — not a confirmed exam appointment.",
+      "feasibilityCheck": "F-02",
+      "suggestedDateLabel": "User Entered",
+      "dateSource": "SRC-USER",
+      "primary": true
+    },
+    {
+      "id": "ms-gpmb-curr",
+      "certificationId": "gpmb",
+      "title": "Complete GPM-b curriculum",
+      "suggestedDate": "2026-11-28",
+      "feasibilityCheck": "F-01",
+      "decision": "Planning target set by you on 31 Oct 2026 (Phase 3 brief) — not a confirmed exam appointment.",
+      "suggestedDateLabel": "User Entered",
+      "dateSource": "SRC-USER",
+      "primary": true
+    },
+    {
+      "id": "ms-weak",
+      "certificationId": null,
+      "title": "Complete revision of weak areas",
+      "suggestedDate": "2026-12-05"
+    },
+    {
+      "id": "ms-mocks",
+      "certificationId": null,
+      "title": "Complete mock exams",
+      "suggestedDate": "2026-12-10"
+    },
+    {
+      "id": "ms-readiness",
+      "certificationId": null,
+      "title": "Review readiness",
+      "suggestedDate": "2026-12-12"
+    },
+    {
+      "id": "ms-exam-ready",
+      "certificationId": null,
+      "title": "Overall exam-readiness target",
+      "suggestedDate": "2026-12-14",
+      "suggestedDateLabel": "User Entered",
+      "dateSource": "SRC-USER",
+      "primary": true,
+      "feasibilityCheck": "F-03",
+      "decision": "Planning target set by you on 31 Oct 2026 (Phase 3 brief) — not a confirmed exam appointment."
+    },
+    {
+      "id": "ms-booking",
+      "certificationId": null,
+      "title": "Decide / confirm examination booking",
+      "suggestedDate": "2026-12-14"
+    }
+  ],
+  "milestoneDefaults": {
+    "targetDate": null,
+    "suggestedDateLabel": "Estimated Planning Value",
+    "status": "Not Started"
+  }
+}

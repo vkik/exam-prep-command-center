@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exam Preparation Command Center 2026</title>
+  <meta name="description" content="Personal study-management and exam-readiness system for GPM-b and Project DPro Foundation.">
+  <meta name="theme-color" content="#0a1424">
+  <link rel="icon" href="src/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="src/styles/variables.css">
+  <link rel="stylesheet" href="src/styles/layout.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/app.css">
+  <link rel="stylesheet" href="src/styles/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <div id="test-banner" class="test-banner" hidden>TEST MODE — synthetic store. Your real records are stored separately and are not affected.</div>
+
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="brand">
+        <div class="brand-mark">
+          <div class="logo" aria-hidden="true">EP</div>
+          <div>
+            <div class="brand-title">Exam Preparation<br>Command Center</div>
+            <div class="brand-sub">2026 · v2</div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav" id="nav">
+          <li><a href="#/overview" data-view="overview"><span class="num">01</span>Overview</a></li>
+          <li><a href="#/planner" data-view="planner"><span class="num">02</span>Study Planner</a></li>
+          <li><a href="#/log" data-view="log"><span class="num">03</span>Study Log</a></li>
+          <li><a href="#/curriculum" data-view="curriculum"><span class="num">04</span>Curriculum</a></li>
+          <li><a href="#/assessments" data-view="assessments"><span class="num">05</span>Assessments<span class="soon">P4</span></a></li>
+          <li><a href="#/exams" data-view="exams"><span class="num">06</span>Mock &amp; Official Exams<span class="soon">P4</span></a></li>
+          <li><a href="#/analytics" data-view="analytics"><span class="num">07</span>Analytics<span class="soon">P5</span></a></li>
+          <li><a href="#/readiness" data-view="readiness"><span class="num">08</span>Readiness<span class="soon">P5</span></a></li>
+          <li><a href="#/quality" data-view="quality"><span class="num">09</span>Data Quality<span class="count" id="nav-dq-count" hidden></span></a></li>
+          <li><a href="#/settings" data-view="settings"><span class="num">10</span>Settings &amp; Backup</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-foot" id="sidebar-foot"></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="btn btn-ghost menu-btn" id="menu-btn" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false">☰</button>
+          <h1 id="page-title">Overview</h1>
+        </div>
+        <div class="topbar-meta" id="topbar-meta"></div>
+      </header>
+      <main class="content" id="content" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:20px;color:#fff">This application requires JavaScript.</p></noscript>
+
+  <!-- Load order matters: verified data → core → views → app. Classic scripts so the app opens from file://. -->
+  <script src="data/generated/seed.js"></script>
+  <script src="src/core/ui.js"></script>
+  <script src="src/core/validate.js"></script>
+  <script src="src/core/migrate.js"></script>
+  <script src="src/core/storage.js"></script>
+  <script src="src/core/store.js"></script>
+  <script src="src/core/calc.js"></script>
+  <script src="src/core/actions.js"></script>
+  <script src="src/views/overview.js"></script>
+  <script src="src/views/study-log.js"></script>
+  <script src="src/views/planner.js"></script>
+  <script src="src/views/curriculum.js"></script>
+  <script src="src/views/data-quality.js"></script>
+  <script src="src/views/settings.js"></script>
+  <script src="src/views/placeholders.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

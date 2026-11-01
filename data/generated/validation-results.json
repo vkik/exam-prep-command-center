@@ -1,0 +1,262 @@
+{
+  "generatedAt": "2026-10-31T13:04:44.371Z",
+  "summary": {
+    "PASS": 31,
+    "WARN": 5,
+    "FAIL": 0
+  },
+  "results": [
+    {
+      "id": "V-01",
+      "area": "Integrity",
+      "title": "Every label is one of the 7 brief labels",
+      "status": "PASS",
+      "detail": "62 labels checked"
+    },
+    {
+      "id": "V-02",
+      "area": "Integrity",
+      "title": "Every source reference exists in the source registry",
+      "status": "PASS",
+      "detail": "46 references → 6 sources"
+    },
+    {
+      "id": "V-03",
+      "area": "Integrity",
+      "title": "All record IDs are unique",
+      "status": "PASS",
+      "detail": "117 IDs"
+    },
+    {
+      "id": "V-10",
+      "area": "GPM-b",
+      "title": "Lesson count = stated 67",
+      "status": "PASS",
+      "detail": "67 lessons across 9 modules (per module: 3 + 8 + 13 + 13 + 7 + 19 + 1 + 1 + 2)"
+    },
+    {
+      "id": "V-11",
+      "area": "GPM-b",
+      "title": "Each module: lesson durations sum exactly to stated module duration",
+      "status": "PASS",
+      "detail": "9/9 modules reconcile to the second"
+    },
+    {
+      "id": "V-12",
+      "area": "GPM-b",
+      "title": "Total video ≈ stated \"17h 15m\"",
+      "status": "PASS",
+      "detail": "Exact total 17h 15m 17s (62117 s)"
+    },
+    {
+      "id": "V-13",
+      "area": "GPM-b",
+      "title": "Watched-lesson flags match snapshot count",
+      "status": "PASS",
+      "detail": "2 flagged: gpmb-m0-l1 \"Exam Details\" (24:57), gpmb-m1-l1 \"Sustainability Imperative\" (22:10)"
+    },
+    {
+      "id": "V-14",
+      "area": "GPM-b",
+      "title": "Platform 2% vs watched lessons (D-03)",
+      "status": "WARN",
+      "detail": "Platform 2%. By count 2.99% (rounds to 3%, floors to 2%); by time 4.55%; 2/81 incl. 14 tests = 2.47%. Platform value preserved."
+    },
+    {
+      "id": "V-15",
+      "area": "GPM-b",
+      "title": "Sidebar tests = 14 (5 chapter + 4 domain + 5 full)",
+      "status": "PASS",
+      "detail": "{\"chapter\":5,\"domain\":4,\"full\":5}"
+    },
+    {
+      "id": "V-16",
+      "area": "GPM-b",
+      "title": "12-vs-14 test count conflict preserved (D-01)",
+      "status": "WARN",
+      "detail": "Course card 12 vs sidebar 14; both kept"
+    },
+    {
+      "id": "V-17",
+      "area": "GPM-b",
+      "title": "Chapter tests map to existing modules 1–5",
+      "status": "PASS",
+      "detail": "pt-ch1→gpmb-m1, pt-ch2→gpmb-m2, pt-ch3→gpmb-m3, pt-ch4→gpmb-m4, pt-ch5→gpmb-m5"
+    },
+    {
+      "id": "V-18",
+      "area": "GPM-b",
+      "title": "Course access outlasts planning period",
+      "status": "PASS",
+      "detail": "Access expires 2027-06-27; plan ends 2026-12-14"
+    },
+    {
+      "id": "V-20",
+      "area": "Historical",
+      "title": "Chapter 1 attempt: 83% / pass 75% / 36 Q / 46 min / Passed is internally consistent",
+      "status": "PASS",
+      "detail": "83% of 36 is only possible as 30/36 (83.3%). Pass needs ≥27/36. Stored correct=null (derived value not written as fact)."
+    },
+    {
+      "id": "V-21",
+      "area": "Historical",
+      "title": "Labelled Historical, no invented date, excluded from readiness",
+      "status": "PASS",
+      "detail": "Approx. three months before 31 Oct 2026 (exact date not recorded)"
+    },
+    {
+      "id": "V-30",
+      "area": "DPro",
+      "title": "Module durations 255 min + course exam 45 = 300 min (\"5 hours\")",
+      "status": "PASS",
+      "detail": "30 + 90 + 60 + 45 + 30 = 255; + 45 = 300"
+    },
+    {
+      "id": "V-31",
+      "area": "DPro",
+      "title": "Platform statuses are consistent with progress, locks and sequence",
+      "status": "PASS",
+      "detail": "dpro-m1: Completed 100% · dpro-m2: Completed 100% · dpro-m3: Completed 100% · dpro-m4: In Progress 0% · dpro-m5: Pending Prior Training · dpro-exam: Pending Prior Training"
+    },
+    {
+      "id": "V-38",
+      "area": "DPro",
+      "title": "Locked items have unlock rules that match platform progress",
+      "status": "PASS",
+      "detail": "dpro-m5 locked until dpro-m4 completed · dpro-exam locked until dpro-m1+dpro-m2+dpro-m3+dpro-m4+dpro-m5 completed"
+    },
+    {
+      "id": "V-32",
+      "area": "DPro",
+      "title": "Platform 50% vs completed items (D-02)",
+      "status": "WARN",
+      "detail": "Platform 50%. 3/5 modules = 60%; 3/6 items incl. course exam = 50% ← matches; by duration 60%. Platform value preserved."
+    },
+    {
+      "id": "V-33",
+      "area": "DPro",
+      "title": "Dates are valid ISO dates; no access after snapshot",
+      "status": "PASS",
+      "detail": "All dates valid"
+    },
+    {
+      "id": "V-34",
+      "area": "DPro",
+      "title": "Displayed due dates reviewed (D-07)",
+      "status": "WARN",
+      "detail": "dpro-m1 due 2026-10-24, dpro-m2 due 2026-11-23, dpro-m3 due 2026-11-24, dpro-m4 due 2026-11-24 — none reviewed; m1 due date = its last-access date"
+    },
+    {
+      "id": "V-35",
+      "area": "DPro",
+      "title": "Platform time-spent kept separate from study time",
+      "status": "PASS",
+      "detail": "340 min platform time on m1–m4 (vs 225 min nominal). Stored as platform data only; never counted as study."
+    },
+    {
+      "id": "V-36",
+      "area": "DPro",
+      "title": "Official exam: 65% of 75 = 49 correct; 120 min; open book (PM4NGOs FAQ)",
+      "status": "PASS",
+      "detail": "ceil(0.65 × 75) = 49; brief values corroborated by pm4ngos.org/faq"
+    },
+    {
+      "id": "V-37",
+      "area": "DPro",
+      "title": "Three separate assessment tracks; only official attempts excluded from readiness",
+      "status": "PASS",
+      "detail": "course-exam (pass 75%) · official-sample (pass 65%) · official (pass 65%)"
+    },
+    {
+      "id": "V-40",
+      "area": "Planning",
+      "title": "Planning period and targets",
+      "status": "PASS",
+      "detail": "2026-10-31 → 2026-12-14 = 45 days inclusive; 70 min/day → 3150 min (52.5 h) total budget (GPM-b 1800 min, DPro 1350 min)"
+    },
+    {
+      "id": "V-41",
+      "area": "Planning",
+      "title": "Readiness weights sum to 100; thresholds ascending",
+      "status": "PASS",
+      "detail": "weights 100; 40 < 60 < 75"
+    },
+    {
+      "id": "V-42",
+      "area": "Planning",
+      "title": "Milestones: suggested dates inside period, in order, targetDate null",
+      "status": "PASS",
+      "detail": "11-07 ms-diag · 11-10 ms-first-practice · 11-14 ms-dpro-curr · 11-28 ms-gpmb-curr · 12-05 ms-weak · 12-10 ms-mocks · 12-12 ms-readiness · 12-14 ms-exam-ready · 12-14 ms-booking"
+    },
+    {
+      "id": "V-46",
+      "area": "Planning",
+      "title": "Daily targets respect each certification's 30-min minimum",
+      "status": "PASS",
+      "detail": "GPM-b 40 ≥ 30; DPro 30 ≥ 30; label User Entered"
+    },
+    {
+      "id": "V-43",
+      "area": "Feasibility",
+      "title": "F-01: GPM-b curriculum by suggested milestone at 40 min/day",
+      "status": "PASS",
+      "detail": "Unwatched video 988 min vs 29 days × 40 = 1160 min. Margin 172 min for notes and practice (34.1 min/day of video needed)."
+    },
+    {
+      "id": "V-44",
+      "area": "Feasibility",
+      "title": "F-02: DPro curriculum by suggested milestone at 30 min/day",
+      "status": "PASS",
+      "detail": "Remaining platform content 120 min (m4 45 + m5 30 + exam 45) vs 450 min budget"
+    },
+    {
+      "id": "V-47",
+      "area": "Planning",
+      "title": "Primary milestones: GPM-b 28 Nov, DPro 14 Nov, exam-readiness 14 Dec (your targets)",
+      "status": "PASS",
+      "detail": "ms-dpro-curr 2026-11-14 · ms-gpmb-curr 2026-11-28 · ms-exam-ready 2026-12-14 — planning targets, not exam appointments"
+    },
+    {
+      "id": "V-48",
+      "area": "Feasibility",
+      "title": "F-03: all remaining platform content by the readiness date",
+      "status": "PASS",
+      "detail": "1108 min content (GPM-b 988 + DPro 120) vs 3150 min budget → 2042 min for notes, revision, practice and mocks"
+    },
+    {
+      "id": "V-45",
+      "area": "GPM-b",
+      "title": "Official GPM-b exam format (D-04) and eligibility (D-05)",
+      "status": "WARN",
+      "detail": "Candidate from a PMI page: 75 Q (60+15), 90 min — Not Yet Verified; needs the official GPM source. Eligibility unconfirmed."
+    },
+    {
+      "id": "V-50",
+      "area": "Integrity",
+      "title": "Every Conflicting Data value links to a register entry",
+      "status": "PASS",
+      "detail": "8 register entries; references D-01, D-02 resolve"
+    },
+    {
+      "id": "V-52",
+      "area": "Integrity",
+      "title": "All discrepancies open by default and evidence-gated",
+      "status": "PASS",
+      "detail": "8 open; each needs evidence + a registered source; D-04 cannot close on SRC-PMI-GPMB alone"
+    },
+    {
+      "id": "V-51",
+      "area": "Integrity",
+      "title": "Seed contains no fabricated user records",
+      "status": "PASS",
+      "detail": "0 sessions, 0 plans, 0 attempts; all personal statuses Not Started; no milestone target dates; no certification claimed"
+    },
+    {
+      "id": "V-60",
+      "area": "Compatibility",
+      "title": "Every v1 record ID exists in v2 with identical durations/watched flags",
+      "status": "PASS",
+      "detail": "108 v1 IDs present; 67 lessons identical → v1 backups can be migrated"
+    }
+  ]
+}

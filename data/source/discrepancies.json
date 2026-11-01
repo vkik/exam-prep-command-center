@@ -1,0 +1,146 @@
+[
+  {
+    "id": "D-01",
+    "certificationId": "gpmb",
+    "title": "PM-Tricks practice test count: 12 vs 14",
+    "values": {
+      "courseCard": 12,
+      "sidebar": 14
+    },
+    "label": "Conflicting Data",
+    "status": "Open",
+    "detail": "Course card states 12 tests; sidebar lists 14 (5 chapter + 4 domain + 5 full exams).",
+    "handling": "Both values preserved. All 14 sidebar tests are tracked. Neither value overwrites the other.",
+    "toResolve": "Preserve both values until confirmed on PM-Tricks (e.g. by counting the tests listed on the course card).",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null
+  },
+  {
+    "id": "D-02",
+    "certificationId": "dpro",
+    "title": "Ready CSOD overall progress 50% vs 3 of 5 modules completed",
+    "values": {
+      "platformPct": 50,
+      "modulesCompleted": 3,
+      "modulesTotal": 5
+    },
+    "label": "Conflicting Data",
+    "status": "Likely explained — awaiting confirmation",
+    "detail": "3/5 modules would be 60%. However the curriculum has 6 items (5 modules + course exam); 3/6 = 50% exactly.",
+    "handling": "Platform value 50% is preserved. No calculated value is substituted.",
+    "toResolve": "Verify on Ready CSOD whether the final course exam counts as a curriculum item in the displayed 50%.",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null
+  },
+  {
+    "id": "D-03",
+    "certificationId": "gpmb",
+    "title": "PM-Tricks overall progress 2% vs 2 of 67 lessons watched",
+    "values": {
+      "platformPct": 2,
+      "watchedLessons": 2,
+      "totalLessons": 67
+    },
+    "label": "Conflicting Data",
+    "status": "Open (minor)",
+    "detail": "2/67 = 2.99%, which rounds to 3%, not 2%. By watched video time it is 4.55%. Two explanations fit 2%: the platform truncates (floor) the percentage, or it counts the 14 tests in the denominator (2/81 = 2.47%).",
+    "handling": "Platform value 2% is preserved. The app will never compute 'platform progress' itself.",
+    "toResolve": "Record the current PM-Tricks % (baseline 2% at 2 watched lessons), watch exactly ONE more lesson, record the new % and watched count. 3/67 floors to 4% (rounds to 4%); 3/81 = 3.7% (floors to 3%, rounds to 4%). A result of 3% points to the 81-item denominator; 4% is consistent with both.",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null,
+    "observations": [
+      {
+        "date": "2026-10-31",
+        "valuePct": 2,
+        "watchedLessons": 2,
+        "totalLessons": 67,
+        "source": "SRC-PMT",
+        "label": "Verified"
+      }
+    ]
+  },
+  {
+    "id": "D-04",
+    "certificationId": "gpmb",
+    "title": "Official GPM-b exam format recorded as Unavailable in v1, but publicly stated",
+    "values": {
+      "v1": "Unavailable",
+      "public": "75 questions (60 sustainability methods + 15 delivery methods), 90 minutes"
+    },
+    "label": "Not Yet Verified",
+    "status": "Open",
+    "detail": "The PMI GPM-b page lists 75 multiple-choice questions and 90 minutes. Pass mark, delivery mode and open-book rules are not stated there. The PM-Tricks 'Domain Tests' (Sustainable Methods / Delivery Methods) mirror the 60/15 split.",
+    "handling": "Stored as candidate values labelled Not Yet Verified with the source URL. Not used for timing or pass/fail until confirmed.",
+    "toResolve": "Verify against the official Green Project Management (GPM) certification source — the PMI shop page alone is not accepted as evidence. The PM-Tricks \"Exam Details\" lesson can corroborate.",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null,
+    "disallowedSources": [
+      "SRC-PMI-GPMB"
+    ]
+  },
+  {
+    "id": "D-05",
+    "certificationId": "gpmb",
+    "title": "GPM-b eligibility course requirement",
+    "values": {
+      "requirement": "Sustainable Project Management for Certified Practitioners e-learning, or an approved ATP course"
+    },
+    "label": "Not Yet Verified",
+    "status": "Open — potential blocker",
+    "detail": "PMI's page lists completion of a specific e-learning course (or an approved Accredited Training Partner course) as an eligibility condition, alongside a PM credential (PMP qualifies). Whether the PM-Tricks CSPP course counts is not known.",
+    "handling": "Recorded as a booking prerequisite to verify before milestone ms-booking.",
+    "toResolve": "Confirm with the official GPM certification requirements whether the PM-Tricks CSPP course satisfies the course requirement.",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null
+  },
+  {
+    "id": "D-06",
+    "certificationId": "gpmb",
+    "title": "Certification name / issuer wording",
+    "values": {
+      "v1Name": "Green Project Management – Basic",
+      "publicName": "Certified Green Project Manager – Basic",
+      "v1Issuer": "Green Project Management (GPM)",
+      "publicIssuer": "GPM Accredited Training Partners and PMI"
+    },
+    "label": "Not Yet Verified",
+    "status": "Open (cosmetic)",
+    "detail": "Public listing uses 'Certified Green Project Manager – Basic' and lists PMI alongside GPM.",
+    "handling": "Full name updated to the public title; issuer kept as brief value with the public note attached.",
+    "toResolve": "Confirm against your exam registration.",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null
+  },
+  {
+    "id": "D-07",
+    "certificationId": "dpro",
+    "title": "Module 1 displayed due date equals its last-accessed date",
+    "values": {
+      "displayedDueDate": "2026-10-24",
+      "lastAccessed": "2026-10-24"
+    },
+    "label": "Not Yet Verified",
+    "status": "Open (minor)",
+    "detail": "Other modules show due dates about a month after access (23–24 Nov). Module 1's due date may actually be a completion date shown in the due-date field.",
+    "handling": "Value preserved; dueDateReviewed = false for all modules.",
+    "toResolve": "Verify on Ready CSOD what the M1 \"due date\" means (deadline vs completion date).",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null
+  },
+  {
+    "id": "D-08",
+    "certificationId": null,
+    "title": "v1 diagnostic question banks have a skewed answer key",
+    "values": {
+      "gpmbKey": "A:3 B:43 C:4 D:0",
+      "dproKey": "A:7 B:40 C:3 D:0"
+    },
+    "label": "Not Yet Verified",
+    "status": "Mitigated — old banks excluded from active use; rewrite in Phase 4",
+    "detail": "86% (GPM-b) and 80% (DPro) of correct answers are option B; option D is never correct. v1 shuffles options at runtime, which hides this on screen, but the banks are weak (and exported or printed banks would be trivially guessable). GPM-b questions are tagged by module only, not by the official exam domains.",
+    "handling": "Question banks are NOT carried into the v2 verified data. They are AI-generated practice content and will be regenerated and reviewed in Phase 4.",
+    "toResolve": "Regenerate with a balanced key, domain tags, and a human review pass.",
+    "closeRequires": "Evidence (what you saw, where, and when). Values are never overwritten when a discrepancy is closed.",
+    "resolution": null
+  }
+]

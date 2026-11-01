@@ -1,0 +1,253 @@
+{
+  "certification": {
+    "id": "dpro",
+    "code": "Project DPro",
+    "name": "Project DPro Foundation",
+    "fullName": "Project DPro Foundation (PM4NGOs)",
+    "awardingBody": {
+      "value": "PM4NGOs",
+      "label": "Verified",
+      "source": "SRC-BRIEF"
+    },
+    "officialExam": {
+      "label": "Verified",
+      "questions": 75,
+      "durationMin": 120,
+      "passMarkPct": 65,
+      "passMarkCorrect": 49,
+      "delivery": "Online",
+      "openBook": true,
+      "negativeMarking": false,
+      "notes": [
+        "Official exam is independent of the Ready CSOD training course.",
+        "The official sample exam can be used for preparation.",
+        "Each purchased exam attempt is one attempt; a retake requires a new purchase.",
+        "AI tools such as ChatGPT or Copilot are strictly prohibited during the official examination."
+      ],
+      "source": "SRC-BRIEF",
+      "corroboratedBy": "SRC-PM4NGOS-FAQ"
+    },
+    "examStatus": "Not booked",
+    "examBookingDate": null,
+    "certificationObtained": false,
+    "certificationEvidence": null
+  },
+  "course": {
+    "id": "course-pme",
+    "displayTitle": "Project Management Essentials Certificate",
+    "platformTitle": "Project Management Essentials Certificate",
+    "platform": "Ready CSOD / DisasterReady",
+    "provider": "Cornerstone OnDemand Foundation (official PM4NGOs training partner) via DisasterReady",
+    "purposeNote": "Aligned with the Project DPro Guide. Completing it does NOT grant the official Project DPro Foundation certification, which requires a separate PM4NGOs exam.",
+    "courseType": "Curriculum",
+    "totalDurationStated": "5 hours incl. final course exam",
+    "platformStatus": "In Progress",
+    "platformProgressSnapshots": [
+      {
+        "id": "pp-pme-1",
+        "valuePct": 50,
+        "snapshotDate": "2026-10-31",
+        "source": "SRC-CSOD",
+        "label": "Verified"
+      }
+    ],
+    "progressDiscrepancyId": "D-02",
+    "zeroScoreNote": "The 0% figures shown on completed modules are not failed assessments. No module quizzes or graded tests have been verified.",
+    "dueDateNote": "Displayed due dates are platform data, not confirmed deadlines. Review them.",
+    "source": "SRC-CSOD",
+    "snapshotDate": "2026-10-31",
+    "label": "Verified"
+  },
+  "modules": [
+    {
+      "id": "dpro-m1",
+      "order": 1,
+      "kind": "module",
+      "title": "Managing a Project",
+      "statedDurationMin": 30,
+      "platformStatus": "Completed",
+      "platformProgressPct": 100,
+      "platformTimeSpentMin": 68,
+      "lastAccessed": "2026-10-24",
+      "displayedDueDate": "2026-10-24",
+      "dueDateReviewed": false,
+      "views": 4,
+      "locked": false,
+      "topics": [
+        "Project management value",
+        "Simplified project phase model",
+        "Triple constraint"
+      ],
+      "source": "SRC-CSOD",
+      "snapshotDate": "2026-10-31",
+      "label": "Verified"
+    },
+    {
+      "id": "dpro-m2",
+      "order": 2,
+      "kind": "module",
+      "title": "Designing a Project",
+      "statedDurationMin": 90,
+      "platformStatus": "Completed",
+      "platformProgressPct": 100,
+      "platformTimeSpentMin": 170,
+      "lastAccessed": "2026-10-25",
+      "displayedDueDate": "2026-11-23",
+      "dueDateReviewed": false,
+      "views": 5,
+      "locked": false,
+      "topics": [
+        "Data collection and analysis",
+        "Bradshaw's four categories of need",
+        "Stakeholder Venn diagrams and analysis matrix",
+        "Problem / objective / solution trees",
+        "Logical Framework"
+      ],
+      "source": "SRC-CSOD",
+      "snapshotDate": "2026-10-31",
+      "label": "Verified"
+    },
+    {
+      "id": "dpro-m3",
+      "order": 3,
+      "kind": "module",
+      "title": "Planning a Project",
+      "statedDurationMin": 60,
+      "platformStatus": "Completed",
+      "platformProgressPct": 100,
+      "platformTimeSpentMin": 87,
+      "lastAccessed": "2026-10-25",
+      "displayedDueDate": "2026-11-24",
+      "dueDateReviewed": false,
+      "views": 1,
+      "locked": false,
+      "topics": [
+        "Planning workshops",
+        "Risks and responses",
+        "Risk Register",
+        "WBS",
+        "Gantt chart",
+        "Activity budget",
+        "Implementation plan"
+      ],
+      "source": "SRC-CSOD",
+      "snapshotDate": "2026-10-31",
+      "label": "Verified"
+    },
+    {
+      "id": "dpro-m4",
+      "order": 4,
+      "kind": "module",
+      "title": "Implementing a Project",
+      "statedDurationMin": 45,
+      "platformStatus": "In Progress",
+      "platformProgressPct": 0,
+      "platformTimeSpentMin": 15,
+      "lastAccessed": "2026-10-25",
+      "displayedDueDate": "2026-11-24",
+      "dueDateReviewed": false,
+      "views": 1,
+      "locked": false,
+      "platformProgressNote": "0% (0/1)",
+      "topics": [
+        "Issue management",
+        "Issues Log",
+        "RACI",
+        "Indicator Performance Tracking Table",
+        "MEAL principles"
+      ],
+      "source": "SRC-CSOD",
+      "snapshotDate": "2026-10-31",
+      "label": "Verified"
+    },
+    {
+      "id": "dpro-m5",
+      "order": 5,
+      "kind": "module",
+      "title": "Closing a Project",
+      "statedDurationMin": 30,
+      "platformStatus": "Pending Prior Training",
+      "platformProgressPct": null,
+      "platformTimeSpentMin": null,
+      "lastAccessed": null,
+      "displayedDueDate": null,
+      "dueDateReviewed": false,
+      "views": null,
+      "locked": true,
+      "lockedReason": "Unlocks after \"Implementing a Project\" is completed on the platform.",
+      "topicsNote": "Detailed lesson content not available (module locked).",
+      "topics": [],
+      "source": "SRC-CSOD",
+      "snapshotDate": "2026-10-31",
+      "label": "Verified",
+      "unlocksAfter": [
+        "dpro-m4"
+      ]
+    },
+    {
+      "id": "dpro-exam",
+      "order": 6,
+      "kind": "course-exam",
+      "title": "Project Management Essentials Exam",
+      "statedDurationMin": 45,
+      "platformStatus": "Pending Prior Training",
+      "platformProgressPct": null,
+      "platformTimeSpentMin": null,
+      "lastAccessed": null,
+      "displayedDueDate": null,
+      "dueDateReviewed": false,
+      "views": null,
+      "locked": true,
+      "lockedReason": "Unlocks after all five training modules are completed on the platform.",
+      "passMarkPct": 75,
+      "retakesAllowed": true,
+      "topicsNote": "Course exam of the Ready CSOD curriculum. NOT the official PM4NGOs exam.",
+      "topics": [],
+      "source": "SRC-CSOD",
+      "snapshotDate": "2026-10-31",
+      "label": "Verified",
+      "unlocksAfter": [
+        "dpro-m1",
+        "dpro-m2",
+        "dpro-m3",
+        "dpro-m4",
+        "dpro-m5"
+      ]
+    }
+  ],
+  "assessmentTracks": [
+    {
+      "id": "pt-csod-exam",
+      "kind": "course-exam",
+      "title": "Ready CSOD — Project Management Essentials Exam",
+      "passMarkPct": 75,
+      "note": "Training-course exam. Passing it earns the course certificate, NOT the Project DPro Foundation certification.",
+      "feedsReadiness": true,
+      "source": "SRC-CSOD",
+      "label": "Verified"
+    },
+    {
+      "id": "pt-dpro-sample",
+      "kind": "official-sample",
+      "title": "PM4NGOs Official Sample Exam",
+      "passMarkPct": 65,
+      "note": "Practice only. Results are not certification results.",
+      "feedsReadiness": true,
+      "source": "SRC-BRIEF",
+      "label": "Verified"
+    },
+    {
+      "id": "pt-dpro-official",
+      "kind": "official",
+      "title": "PM4NGOs Project DPro Foundation Exam (purchased attempt)",
+      "passMarkPct": 65,
+      "questions": 75,
+      "durationMin": 120,
+      "note": "Each purchased attempt is one attempt. Record only real, evidenced attempts.",
+      "feedsReadiness": false,
+      "source": "SRC-BRIEF",
+      "label": "Verified"
+    }
+  ],
+  "historicalAttempts": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "exam-preparation-command-center",
+  "version": "2.0.0-phase3",
+  "private": true,
+  "description": "Exam Preparation Command Center 2026 — no runtime dependencies",
+  "scripts": {
+    "validate": "node tools/validate-data.mjs",
+    "build": "node tools/build-seed.mjs",
+    "test": "node --test tests/data.test.mjs tests/state.test.mjs",
+    "e2e": "python3 tests/e2e_phase1.py && python3 tests/e2e_phase2.py && python3 tests/e2e_phase3.py"
+  }
+}

@@ -1,0 +1,10 @@
+# Personal data must never be committed: study logs live only in each browser's storage,
+# and backups/exports are personal files.
+exam-prep-backup*.json
+*backup*.json
+study-sessions*.csv
+assessment-results*.csv
+exports/
+tests/*-results.json
+node_modules/
+.DS_Store
